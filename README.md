@@ -6,13 +6,14 @@ Analysis of about 100,000 real orders from Olist, a Brazilian online marketplace
 
 ## Key findings
 
-> Fill this in after running the analysis on the real data (see `results/SUMMARY.md`). Write 4–6 bullets, each as a number plus what a business should do about it. Example format:
-> - **Late deliveries cut review scores from X to Y.** Fixing the slowest states would protect ratings for Z% of orders.
+Based on 99,441 orders (Sep 2016 – Aug 2018). Revenue is in Brazilian reais (R$).
 
-- 
-- 
-- 
-- 
+- **Late deliveries wreck reviews.** On-time orders average 4.29 stars. Orders 8+ days late average 1.70, and 79% of them get 1–2 stars. Fixing the slowest routes protects the marketplace's rating more than any other lever here.
+- **Almost nobody comes back.** Only 3.0% of 94,990 customers placed a second order, and no monthly cohort passed 3.3% repeat buyers within a year. Growth is driven almost entirely by new customers, so even a small retention win would be significant.
+- **Revenue depends on a few sellers.** The top 10% of sellers bring in 67.5% of revenue, and the top 20% bring in 82.6%. Losing a handful of large sellers would hurt badly, so they deserve dedicated account management.
+- **The Northeast gets worse service and pays more for it.** In Alagoas, 21.4% of orders arrive late, after 24.5 days on average, vs 4.6% and 12 days in Minas Gerais. Shipping costs 26% of the basket value in Maranhão vs 17% in the Southeast. A regional fulfillment center would address both.
+- **Delivery promises are padded by about 10 days.** Orders took 8–16 days on average, but customers were promised 17–29. Tighter, more accurate estimates could lift conversion without any change to logistics.
+- **Installments unlock bigger baskets.** Orders split into 7–10 installments average R$334, vs R$96 for orders paid in full. Promoting installment plans on high-price categories is a direct lever on order value.
 
 ## Dashboard
 
