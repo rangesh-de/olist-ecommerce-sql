@@ -14,6 +14,16 @@ Analysis of about 100,000 real orders from Olist, a Brazilian online marketplace
 - 
 - 
 
+## Dashboard
+
+Interactive sales performance dashboard in Tableau Public: KPIs with like-for-like year-over-year, monthly trend, state map, region → state drill-down, top categories, and how late deliveries hit review scores. Click a state to filter everything.
+
+> Add after publishing: **[View on Tableau Public](LINK)**
+>
+> ![Dashboard](dashboard/screenshot.png)
+
+Built from `sql/04_dashboard_views.sql`, exported by `scripts/export_for_tableau.py`. Step-by-step build guide: [`docs/TABLEAU_DASHBOARD.md`](docs/TABLEAU_DASHBOARD.md).
+
 ## Business questions
 
 | # | Question | Main SQL techniques |
@@ -125,6 +135,9 @@ python scripts/load_data.py
 
 # 5. Run all 15 queries -> results/*.csv and results/SUMMARY.md
 python scripts/run_analysis.py
+
+# 6. Export CSVs for the Tableau dashboard
+python scripts/export_for_tableau.py
 ```
 
 To explore by hand, connect any SQL client (DBeaver, pgAdmin, VS Code) to `localhost:5432`, database `olist`, user `olist`, password `olist`, then `SET search_path TO olist;`.
@@ -142,6 +155,7 @@ To explore by hand, connect any SQL client (DBeaver, pgAdmin, VS Code) to `local
 │   ├── 01_schema.sql      Tables, keys, indexes
 │   ├── 02_views.sql       Shared business logic
 │   ├── 03_data_quality_checks.sql   Run automatically after loading
+│   ├── 04_dashboard_views.sql       Views exported for Tableau
 │   └── analysis/          q01–q15, one file per question
 └── docker-compose.yml     PostgreSQL 16
 ```
